@@ -26,8 +26,8 @@ sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O 
 # 5. Clone and Setup Dotfiles
 echo "Cloning and setting up dotfiles..."
 git clone git@github.com:willneve/dotfiles.git ~/dotfiles
-chmod +x ~/dotfiles/setup.sh
-zsh ~/dotfiles/setup.sh
+chmod +x ~/dotfiles/setup/setup.sh
+zsh ~/dotfiles/setup/setup.sh
 
 # 6. Install Node.js
 echo "Updating package list and installing Node.js..."
