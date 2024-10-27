@@ -42,14 +42,10 @@ sudo apt install -y npm
 # 8. Install NVM (Node Version Manager)
 echo "Installing NVM..."
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
-echo "export NVM_DIR=\"$HOME/.nvm\"\n[ -s \"$NVM_DIR/nvm.sh\" ] && \. \"$NVM_DIR/nvm.sh\"" >> ~/.zshrc
 echo "export NVM_DIR=\"$HOME/.nvm\"\n[ -s \"$NVM_DIR/nvm.sh\" ] && \. \"$NVM_DIR/nvm.sh\"\n[ -s \"$NVM_DIR/bash_completion\" ] && \. \"$NVM_DIR/bash_completion\""
 # 9. Install PostgreSQL
 echo "Installing PostgreSQL..."
 sudo apt install -y postgresql
-echo "$USER ALL=(ALL) NOPASSWD: /etc/init.d/postgresql" | sudo tee /etc/sudoers.d/postgresql
-echo "# Start postgresql local server\nsudo /etc/init.d/postgresql start" >> ~/.zshrc
-
 # 10. Install GitHub CLI (gh)
 echo "Installing GitHub CLI (gh)..."
 (type -p wget >/dev/null || (sudo apt update && sudo apt-get install wget -y)) \
