@@ -6,6 +6,7 @@ set -e
 read -p "Enter your email address for the SSH key: " email
 echo "Creating SSH Key with email: $email"
 ssh-keygen -t ed25519 -C "$email" -f "$HOME/.ssh/main"
+eval "$(ssh-agent -s)"
 ssh-add "$HOME/.ssh/main"
 
 # 2. Print SSH Public Key for GitHub setup
