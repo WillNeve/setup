@@ -23,6 +23,7 @@ chsh -s $(which zsh)
 # 4. Install Oh My Zsh
 echo "Installing Oh My Zsh..."
 sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+_Answer <kbd>Y</kbd> to `Do you want to change your default shell to zsh? [Y/n]`_
 
 # 5. Clone and Setup Dotfiles
 echo "Cloning and setting up dotfiles..."
