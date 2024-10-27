@@ -7,16 +7,9 @@
   ```bash
   wsl --install
   ```
+  _this will also install Ubuntu Linux Distribution as default_
+  - on Windows terminal, open an Ubuntu window to complete the installation
   - _System restart will likely be needed after this_
-
-## 2. **Install Ubuntu**
-
-- After WSL is installed install Ubuntu distribution by running:
-
-  ```bash
-  wsl --install -d Ubuntu
-  ```
-- on Windows terminal, open an Ubuntu window to complete the installation
 
 ## 3. **Install Visual Studio Code (VSCode)**
 
