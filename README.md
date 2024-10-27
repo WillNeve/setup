@@ -7,8 +7,7 @@
   ```bash
   wsl --install
   ```
-
-- _System restart will likely be needed after this_
+  - _System restart will likely be needed after this_
 
 ## 2. **Install Ubuntu**
 
@@ -17,6 +16,7 @@
   ```bash
   wsl --install -d Ubuntu
   ```
+- on Windows terminal, open an Ubuntu window to complete the installation
 
 ## 3. **Install Visual Studio Code (VSCode)**
 
