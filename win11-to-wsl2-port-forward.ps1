@@ -1,7 +1,7 @@
 $WSL_IP_ADDR_INFO = bash.exe -c "ip a | grep 'inet .* scope global eth0'"
 $WSL_IPV4_REGEXP = 'inet\s+([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})\/[0-9]{1,2}\s+.*?eth0'
 $WSL_IPV4_REGEXP_MATCHES = [regex]::Match($WSL_IP_ADDR_INFO, $WSL_IPV4_REGEXP)
-$WSL_IPV4 = $matches[0].Groups[1].Value
+$WSL_IPV4 = $WSL_IPV4_REGEXP_MATCHES[0].Groups[1].Value
 
 if (!$WSL_IPV4) {
   Write-Host "ERROR: WSL2 IP address could not be found"
