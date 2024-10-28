@@ -10,6 +10,7 @@ if (!$WSL_IPV4) {
 #[Ports]
 $LISTEN_ADDRESS = '0.0.0.0' # Local IPV4 (HostAddress)
 $PORTS = @(3000, 3001, 5500, 5173, 8000)
+$PORTS_ARR = $PORTS -join ','
 
 # Remove existing firewall inbound/outbound rules
 iex "Remove-NetFireWallRule -DisplayName 'WSL2 Firewall Unlock'"
