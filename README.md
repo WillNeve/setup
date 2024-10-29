@@ -39,11 +39,11 @@ bash <(wget -qO- https://raw.githubusercontent.com/WillNeve/setup/refs/heads/mai
   ```
 </details>
 
-## 4. (Optional) **Setup Windows11 --> WSL2 Port Forwarding**
+## 4. (Optional) **Configure Windows11 ➡️ WSL2 Port Forwarding (Hyper-V Firewall)**
 
-- Download Windows-WSL2 port forwarding script (powershell) `win11-to-wsl2-port-forward.ps1` from https://raw.githubusercontent.com/WillNeve/setup/refs/heads/main/win11-to-wsl2-port-forward.ps1
+- Download Windows-WSL2 port forwarding script (Powershell) `win11-to-wsl2-port-forward.ps1` from https://raw.githubusercontent.com/WillNeve/setup/refs/heads/main/win11-to-wsl2-port-forward.ps1
 
-### Setup up task to run this script on system logon
+### Setup up task to automatically run this script at system logon
 
 - Press <kbd>⊞</kbd> (windows button)
 - Search for and open `Task Scheduler`
