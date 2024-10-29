@@ -27,8 +27,10 @@ bash <(wget -qO- https://raw.githubusercontent.com/WillNeve/setup/refs/heads/mai
   <summary>
     If you are not me feel free to instead download the script and inspect it 👀
   </summary>
+  
   <br>
-    ```bash
+  
+  ```bash
   wget -O the-setup-script.sh https://raw.githubusercontent.com/WillNeve/setup/refs/heads/main/setup.sh
   echo " - - - - - -  v SETUP SCRIPT v - - - - - -"
   cat the-setup-script.sh
