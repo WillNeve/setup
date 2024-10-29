@@ -15,6 +15,7 @@
 
 - Download the VSCode installer from [here](https://code.visualstudio.com/) and install it on your Windows system.
 - During installation, ensure you tick the box for **Add to PATH**.
+- _You may need to restart shell for PATH addition `code` to take affect_
 
 ## 3. **Download and run setup script**
 
@@ -22,15 +23,19 @@
 bash <(wget -qO- https://raw.githubusercontent.com/WillNeve/setup/refs/heads/main/setup.sh)
 ```
 
-- If you are not me feel free to instead download the script and inspect it 👀:
-
-  ```bash
+<details>
+  <summary>
+    If you are not me feel free to instead download the script and inspect it 👀
+  </summary>
+  <br>
+    ```bash
   wget -O the-setup-script.sh https://raw.githubusercontent.com/WillNeve/setup/refs/heads/main/setup.sh
   echo " - - - - - -  v SETUP SCRIPT v - - - - - -"
   cat the-setup-script.sh
   echo " - - - - - -  ^ SETUP SCRIPT ^ - - - - - -"
   rm the-setup-script.sh
   ```
+</details>
 
 ## 4. (Optional) **Setup Windows11 --> WSL2 Port Forwarding**
 
