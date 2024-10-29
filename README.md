@@ -1,4 +1,4 @@
-# WSL2/Ubuntu Env Setup
+# ⚙️ WSL2/Ubuntu Env Setup
 
 ## 1. **Install WSL (Windows Subsystem for Linux)**
 
