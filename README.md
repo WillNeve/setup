@@ -38,20 +38,3 @@ bash <(wget -qO- https://raw.githubusercontent.com/WillNeve/setup/refs/heads/mai
   rm the-setup-script.sh
   ```
 </details>
-
-## 4. (Optional) **Configure Windows11 ➡️ WSL2 Port Forwarding (Hyper-V Firewall)**
-
-- Download Windows-WSL2 port forwarding script (Powershell) `win11-to-wsl2-port-forward.ps1` from https://raw.githubusercontent.com/WillNeve/setup/refs/heads/main/win11-to-wsl2-port-forward.ps1
-
-### Setup up task to automatically run this script at system logon
-
-- Press <kbd>⊞</kbd> (windows button)
-- Search for and open `Task Scheduler`
-- On the Actions bar (right) press `Create Task...`
-- In the *Create Task* Window:
-  - (General) Name the task (ex: `WSL2 Auto Port Forwarding`)
-  - (Triggers) `New...` --> `Begin the task:` --> `at logon` --> `OK`
-  - (Actions) `New...` --> `Action: Start a Program` --> `Program/Script: Browse:` (find and open downloading script)  --> `OK`
-  - Once complete press `OK` on the main window close the complete the task creation
-
-_After creation, you can run the task manually by finding it in the list and right clicking --> `Run`_
